@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+
+		.container
+		{
+	position: relative;
+  /*width: 50%;*/
+		}
+		{
+			font-style:italic;
+			color: red;
+			font-weight: bold;
+			text-align: center;
+			font-size: 20px;
+			margin-right:23px; 
+		}
+
+		body
+		{
+			
+			background-image:url("image_1.png");
+			background-size: 50% 100%;
+			background-repeat: no-repeat;
+			background-color: #3cb371;
+		}
+		img
+		{
+			
+			width: 175px;
+			height: 175px;
+		}
+
+		.img1{
+		text-align: right;
+		}
+		.info
+		{
+			text-align: right;
+			font-style:20px;
+			font-weight: bold;
+			color: darkblue;
+			
+		}
+
+header
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	color: yellow;
+	background-color: red;
+}
+footer
+{
+	background-color: yellow;
+
+}
+figcaption
+{
+font-weight: bold;	
+}
+.text
+{
+	margin-top: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+.zoom {
+  /*padding: 50px;*/
+  transition: transform .2s;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+}
+.zoom:hover {
+	filter: grayscale(100%);
+  transform: scale(1.5); 
+}
+/*.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  translate: 2s width;
+}*/
+.gif
+{
+	width: 220px;
+	height: 100px;
+	margin-left: 45%;
+	text-align: right;
+}
+.overlay {
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 175px;
+  width: 190px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.img_text
+{
+	
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.my_img
+{
+  text-align: right;
+  display: block;
+  width: 175px;
+  height: 175px;
+
+
+}
+.projects
+{
+	color: red;
+}
+
+
+	</style>
+	<title>My Portfolio</title>
+</head>
+<body>
+	<header>My Porfolio</header>
+<img src="https://media.giphy.com/media/OkJat1YNdoD3W/giphy.gif" class="gif">
+<div class="container">
+<div class="img1">
+<img src="image.jpg" class="my_img">
+<div class="overlay">
+	<div class="img_text">Vishvesh</div>
+	</div>	
+<!-- <figcaption>Vishvesh</figcaption> -->
+
+<div>
+<figcaption>Cricket</figcaption>	
+<img src="https://statics.sportskeeda.com/editor/2018/09/05b52-1536819360-800.jpg" class="zoom">
+<figcaption>Table Tennis</figcaption>
+<img src="https://www.surreyhillsnc.org.au/wp-content/uploads/2017/02/table-tennis-og-image-cropped-1080x627.jpg">
+
+<figcaption>Photography</figcaption>
+<img src="https://media.giphy.com/media/6xupaFhVTMg4U/giphy.gif" >
+
+</div>
+</div>
+</div>
+<div>
+<p class="info">I like Web Development and also i have knowledge regarding Odoo.<br>I love playing cricket,table tennis and clicking photography.
+</p>
+</div>
+<div class="text">
+<p class="projects">
+Projects:
+</p>
+<p>I have made a Project in C++,which includes the self recored audios of all the concets in C++.The user can learn the topic along with the relevant examples! </p> 
+<p>I have also made School Management module in Odoo using Python. </p>
+
+<p>Some animations can be viewed by visiting <a href="prac.html">here!</a></p>	
+<p>I am keen of watching avengers movies!  </p>
+<img src="https://media3.giphy.com/media/pNTxtmpDVOLToFpoDp/giphy.gif">
+<img src="https://media3.giphy.com/media/ckeHl52mNtoq87veET/giphy.gif">
+</div>	
+
+<footer>
+<p>Made By Vishvesh &copy;.&nbsp;&nbsp;All Rights Reserved.</p>
+<a class="link" href="">Made with&nbsp;</a>&#x1f495;<a class="link" href="">&nbsp;in India</a>
+</footer>	
+</body>
+</html>

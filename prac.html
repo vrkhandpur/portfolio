@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  translate: 2s width;
+}
+.animation_2
+{
+width: 120px;
+height: 120px;
+background: red;
+position: relative;
+-webkit-animation-name: animation_2;
+-webkit-animation-duration: 3s; 
+-webkit-animation-fill-mode: forwards;
+animation-name: example;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+@keyframes animation_2 {
+  from {top: 0px;}
+  to {top: 250px; background-color: blue;}
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px; opacity:0.5;}
+  100% {background-color:red; left:0px; top:0px; opacity:0.5;}
+}
+div:hover
+{
+  transform:translate(100px,20px);
+  transform: rotate(150deg);
+  
+
+}
+</style>
+</head>
+<body>
+
+<div></div>
+<div class="animation_2"></div>
+</body>
+</html>
